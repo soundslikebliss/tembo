@@ -52,7 +52,13 @@ ul {
 
 li {
   display: block;
-  border-top: 1px solid #2c3e50;
+  border-bottom: 1px solid #2c3e50;
+  text-align: left;
+}
+
+i {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 a {

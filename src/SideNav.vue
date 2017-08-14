@@ -1,8 +1,9 @@
 <template>
   <div id="sideNav">
     <ul>
-      <li v-for="song in songs">
-        {{song.image}}{{song.title}}{{song.artist}}{{song.length}}
+      <li v-for="category in categories">
+         <i class="fa fa-music fa-2x"></i>
+         {{category}}
       </li>
     </ul>
   </div>
@@ -10,35 +11,10 @@
 
 <script>
 export default {
-  name: 'songs',
+  name: 'categories',
   data () {
     return {
-      songs: [
-        {
-          image: 'image',
-          title: 'Levels - Radio Edit',
-          artist: 'Avicii',
-          length: '03:20'
-        },
-        {
-          image: 'image',
-          title: 'Let It Go - Axwell Remix',
-          artist: 'Dirty South Ft Rudy',
-          length: '07:05'
-        },
-        {
-          image: 'image',
-          title: 'Submariner',
-          artist: 'Axwell',
-          length: '07:10'
-        },
-        {
-          image: 'image',
-          title: 'Lost in Acid - Tim Bergs Acidic Remix',
-          artist: 'David Tort',
-          length: '06:49'
-        }
-      ]
+      categories: ['Lounge and Chill Out', 'Oldies', 'Progressive House', 'Rap / R&B', 'Reggae', 'Rock', 'Rock N Roll', 'Techno', 'Top DJs']
     }
   }
 }
@@ -48,6 +24,9 @@ export default {
 #sideNav {
   width: 25%;
   float: left;
+}
+i {
+  padding: .5em;
 }
 
 </style>
