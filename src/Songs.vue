@@ -121,5 +121,8 @@ span {
   #songs {
     width: 100%;
   }
+  i {
+    font-size: 30px;
+  }
 }
 </style>

@@ -7,7 +7,7 @@
     </ul>
      <ul>
       <li v-for="link in links">
-         {{link.text}}
+         <span>{{link.text}}</span>
       </li>
     </ul>
   </div>
@@ -68,5 +68,17 @@ i {
 }
 i:hover {
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  i {
+    font-size: 20px;
+  }
+  li {
+  padding: 0 .5em;
+  }
+  span {
+    font-size: 12px;
+  }
 }
 </style>

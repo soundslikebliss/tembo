@@ -107,5 +107,8 @@ i:hover, span:hover {
   .search {
     width: 90%;
   }
+  form {
+    display: none;
+  }
 }
 </style>
