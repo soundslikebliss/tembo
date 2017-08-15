@@ -109,7 +109,7 @@ span {
 .song-artist, .song-length {
   width: 20%;
 }
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   #songs {
     width: 60%;
   }
@@ -117,7 +117,7 @@ span {
     width: 40%;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #songs {
     width: 100%;
   }

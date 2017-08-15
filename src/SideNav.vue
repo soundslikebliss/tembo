@@ -54,12 +54,12 @@ i {
   height: 100%;
   width: 50%;
 }
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   #sideNav {
     width: 35%;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #sideNav {
     display: none;
   }

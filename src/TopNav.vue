@@ -89,7 +89,7 @@ i:hover, span:hover {
   color: #fff;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   ul {
     width: 35%;
   }
@@ -97,7 +97,7 @@ i:hover, span:hover {
     width: 60%;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   ul {
     display: none;
   }
