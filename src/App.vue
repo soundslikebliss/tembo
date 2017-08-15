@@ -1,13 +1,17 @@
 <template>
   <div id="app">
+    <topNav></topNav>
     <sideNav></sideNav>
     <songs></songs>
+    <footerNav></footerNav>
   </div>
 </template>
 
 <script>
+import TopNav from './TopNav.vue'
 import SideNav from './SideNav.vue'
 import Songs from './Songs.vue'
+import FooterNav from './FooterNav.vue'
 
 export default {
   name: 'app',
@@ -16,8 +20,10 @@ export default {
     }
   },
   components: {
+    TopNav,
     SideNav,
-    Songs
+    Songs,
+    FooterNav
   }
 }
 </script>
@@ -27,6 +33,9 @@ export default {
 html, body {
   background-color: #000;
 }
+body {
+  margin: 0;
+}
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -34,6 +43,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #eee;
+  font-weight: 700;
 }
 
 img {
@@ -48,12 +58,20 @@ h1, h2 {
 ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 li {
   display: block;
   border-bottom: 1px solid #2c3e50;
   text-align: left;
+}
+li:hover {
+  background-color: green;
+  cursor: pointer;
+}
+span:hover {
+  cursor: pointer;
 }
 
 i {

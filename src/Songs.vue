@@ -91,8 +91,9 @@ export default {
 
 <style scoped>
 #songs {
-  width: 75%;
+  width: 74%;
   float: left;
+  border-left: 1px solid #2c3e50;
 }
 i {
   padding: .25em;
@@ -105,6 +106,19 @@ span {
 }
 .song-artist, .song-length {
   width: 20%;
+}
+@media (max-width: 1024px) {
+  #songs {
+    width: 60%;
+  }
+  .song-title {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  #songs {
+    width: 100%;
+  }
 }
 
 
