@@ -2,12 +2,17 @@
   <div id="footer-nav">
     <ul>
       <li v-for="link in links">
-         
+         <i :class="link.icon"></i>
+      </li>
+    </ul>
+     <ul>
+      <li v-for="link in links">
          {{link.text}}
       </li>
     </ul>
   </div>
 </template>
+
 
 <script>
 export default {
@@ -16,23 +21,23 @@ export default {
     return {
       links: [
         {
-          icon: '',
+          icon: 'fa fa-music fa-2x',
           text: 'Playlists'
         },
         {
-          icon: '',
+          icon: 'fa fa-line-chart fa-2x',
           text: 'Charts'
         },
         {
-          icon: '',
+          icon: 'fa fa-database fa-2x',
           text: 'Browse'
         },
         {
-          icon: '',
+          icon: 'fa fa-star fa-2x',
           text: 'Match'
         },
         {
-          icon: '',
+          icon: 'fa fa-history fa-2x',
           text: 'Hisory'
         }
       ] 
@@ -41,40 +46,27 @@ export default {
 }
 </script>
 
+
 <style scoped>
 #footer-nav {
+  clear: both;
   border-top: 1px solid #2c3e50;
-  padding: 2em 0 3em 0;
+  padding: 2em 0;
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-ul {
-
 }
 li {
   display: inline-block;
   border: none;
+  padding: 0 1em;
 }
 li:hover {
   background-color: rgba(255, 255, 255, 0);
 }
-
-p {
-
-}
 i {
-color: green;
-padding: 0 .5em;
+  color: green;
+  padding: .2em .4em;
 }
 i:hover {
   color: #fff;
 }
-
-@media (max-width: 1024px) {
-
-}
-@media (max-width: 768px) {
-
-}
-
 </style>

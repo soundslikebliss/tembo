@@ -11,6 +11,7 @@
   </div>
 </template>
 
+
 <script>
 export default {
   name: 'songs',
@@ -89,6 +90,7 @@ export default {
 }
 </script>
 
+
 <style scoped>
 #songs {
   width: 74%;
@@ -120,6 +122,4 @@ span {
     width: 100%;
   }
 }
-
-
 </style>

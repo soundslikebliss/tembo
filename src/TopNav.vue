@@ -16,6 +16,7 @@
   </div>
 </template>
 
+
 <script>
 export default {
   name: 'links',
@@ -27,11 +28,12 @@ export default {
 }
 </script>
 
+
 <style scoped>
 #topNav {
   border-bottom: 1px solid #2c3e50;
   padding: 2em 0 3em 0;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 span {
   color: green;
@@ -54,6 +56,7 @@ li:hover {
   display: none;
   position: absolute;
   left: 0;
+  cursor: pointer;
 }
 .search {
   width: 70%;
@@ -105,5 +108,4 @@ i:hover, span:hover {
     width: 90%;
   }
 }
-
 </style>

@@ -12,6 +12,7 @@
   </div>
 </template>
 
+
 <script>
 export default {
   name: 'categories',
@@ -22,6 +23,7 @@ export default {
   }
 }
 </script>
+
 
 <style scoped>
 #sideNav {
@@ -35,6 +37,7 @@ export default {
   height: 81px;
   width: 100%;
   background-color: green;
+  cursor: pointer;
 }
 .mobile-burger i {
   position: absolute;
@@ -61,5 +64,4 @@ i {
     display: none;
   }
 }
-
 </style>
